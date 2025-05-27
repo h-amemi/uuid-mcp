@@ -1,2 +1,3 @@
-def hello() -> str:
-    return "Hello from uuid-mcp!"
+from .server import main
+
+__all__ = ["main"]

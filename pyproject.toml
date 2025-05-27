@@ -1,11 +1,13 @@
 [project]
 name = "uuid-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple MCP server that generates UUIDs"
 authors = [
     { name = "Hayato Amemiya", email = "hayato.ame@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "mcp>=1.0.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
