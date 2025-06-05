@@ -22,8 +22,6 @@ certifi==2025.4.26
     # via httpx
 click==8.2.1
     # via uvicorn
-colorama==0.4.6
-    # via click
 h11==0.16.0
     # via httpcore
     # via uvicorn

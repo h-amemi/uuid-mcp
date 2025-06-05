@@ -22,8 +22,6 @@ certifi==2025.4.26
     # via httpx
 click==8.2.1
     # via uvicorn
-colorama==0.4.6
-    # via click
 h11==0.16.0
     # via httpcore
     # via uvicorn
@@ -36,8 +34,14 @@ httpx-sse==0.4.0
 idna==3.10
     # via anyio
     # via httpx
+iniconfig==2.1.0
+    # via pytest
 mcp==1.9.1
     # via uuid-mcp
+packaging==25.0
+    # via pytest
+pluggy==1.6.0
+    # via pytest
 pydantic==2.11.5
     # via mcp
     # via pydantic-settings
@@ -45,6 +49,11 @@ pydantic-core==2.33.2
     # via pydantic
 pydantic-settings==2.9.1
     # via mcp
+pygments==2.19.1
+    # via pytest
+pytest==8.4.0
+    # via pytest-asyncio
+pytest-asyncio==1.0.0
 python-dotenv==1.1.0
     # via pydantic-settings
 python-multipart==0.0.20
