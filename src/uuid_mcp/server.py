@@ -34,7 +34,15 @@ async def list_tools() -> list[Tool]:
 @server.call_tool()
 async def call_tool(name: str, arguments: dict) -> list[TextContent]:
     if name == "generate_uuid":
-        version = arguments.get("version", 4)
+        version_value = arguments.get("version", 4)
+        try:
+            version = int(version_value)
+        except (TypeError, ValueError):
+            return [
+                TextContent(
+                    type="text", text="Error: 'version' must be an integer (1 or 4)"
+                )
+            ]
 
         if version == 1:
             generated_uuid = str(uuid.uuid1())
