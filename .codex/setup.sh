@@ -7,8 +7,5 @@ if ! command -v rye >/dev/null 2>&1; then
   source "$HOME/.rye/env"
 fi
 
-# Install project dependencies
+# Install project and dev dependencies
 rye sync
-
-# Install test dependencies
-rye run pip install pytest pytest-asyncio
