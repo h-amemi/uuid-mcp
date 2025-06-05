@@ -3,7 +3,7 @@ set -euo pipefail
 
 # Install Rye if it's not already available
 if ! command -v rye >/dev/null 2>&1; then
-  curl -sSf https://rye-up.com/get | bash
+  curl -sSf https://rye.astral.sh/get | bash
   source "$HOME/.rye/env"
 fi
 
